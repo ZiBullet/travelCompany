@@ -2,13 +2,17 @@
 $sz-colossal: 96px;
 // __________Radius____________
 $rad-brd-heavy: 60px;
+$rad-brd-semiheavy: 40px;
+$rad-brd-light: 10px;
 // _____________Paddings__________________
 $pad-heavy: 17px 55px;
+// ____________Colors_________________
+$clr-blue-soft: #0499DD;
 
 header {
     padding: 26px 0;
     position: relative;
-    height: 100vh;
+    height: 950px;
     width: 100%;
     background-image: url('../assets/img/screen__one-bg.jpg');
     background-size: cover;
@@ -38,25 +42,122 @@ header {
                 }
             }
         }
+
         .icon-menu {
             display: none;
         }
     }
+
     .header-headline {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 45px;
+
         .header-title {
             width: 60%;
             color: #fff;
             font-size: $sz-colossal;
         }
+
         .header-button {
             padding: $pad-heavy;
             border-radius: $rad-brd-heavy;
+
             & button {
                 background: none;
+            }
+        }
+    }
+}
+
+main {
+    margin: 50px 0;
+    padding: 40px 0;
+    width: 100%;
+
+    .main__screen-one {
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+
+        .main__screen__one-heading {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .main__screen__one-headtitle {
+                font-size: 24px;
+                color: $clr-blue-soft;
+            }
+
+            .main__screen__one-show__all {
+                color: #282828;
+                text-decoration: underline;
+            }
+        }
+
+        .main__screen__one-card__container {
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 90%;
+            gap: 20px;
+            .screen__one-card {
+                border-radius: $rad-brd-light;
+                height: 600px;
+                width: 100%;
+                background-image: url('../assets/img/first-card-bg.png');
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                gap: 20px;
+                padding: 16px 42px;
+
+                .travel-type {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+
+                    span {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #fff;
+                    }
+
+                    h4 {
+                        font-weight: 700;
+                        color: #FFC700;
+
+                    }
+
+                    p {
+                        margin-top: 8px;
+                        font-size: 14px;
+                        width: 60%;
+                        justify-content: space-between;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            object-fit: cover;
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+                .travel-type-description {
+                    width: 100%;
+                    p {
+                        font-size: 12px;
+                        width: 84%;
+                        color: #fff;
+                        
+                    }
+                }
             }
         }
     }
