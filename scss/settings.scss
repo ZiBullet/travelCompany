@@ -1,0 +1,34 @@
+// ______________Container___________________
+$cont-width: 80%;
+// ____________________Margins________________
+$mar-center: 0 auto;
+// _________________Colors____________________
+$clr-blue-soft: #0499DD;
+// _________________Gradients color_____________
+$gradient-blue: 92.71deg, #0499DD 0%, #17C1BC 100%;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.container {
+    margin: $mar-center;
+    width: $cont-width;
+}
+.elem-director {
+    border: none;
+    line-height: 16px;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient($gradient-blue);
+}
+button, a {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}

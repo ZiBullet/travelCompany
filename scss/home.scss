@@ -1,0 +1,63 @@
+// ________________Sizes____________________
+$sz-colossal: 96px;
+// __________Radius____________
+$rad-brd-heavy: 60px;
+// _____________Paddings__________________
+$pad-heavy: 17px 55px;
+
+header {
+    padding: 26px 0;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/img/screen__one-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 26px;
+
+        .header-services__list {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+
+            .header-services__list-item {
+
+                & .active {
+                    color: #FFC700;
+                }
+            }
+        }
+        .icon-menu {
+            display: none;
+        }
+    }
+    .header-headline {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+        .header-title {
+            width: 60%;
+            color: #fff;
+            font-size: $sz-colossal;
+        }
+        .header-button {
+            padding: $pad-heavy;
+            border-radius: $rad-brd-heavy;
+            & button {
+                background: none;
+            }
+        }
+    }
+}
