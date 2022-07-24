@@ -5,6 +5,7 @@
             .header-services__list {
                 display: none;
             }
+
             .icon-menu {
                 width: 32px;
                 height: 32px;
@@ -19,8 +20,15 @@
             }
         }
     }
+    main {
+        .main__screen-two {
+            .main__screen__two-about__box {
+                width: 80%;
+            }
+        }
+    }
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 880px){
     header {
         height: 60vh;
         .container {
@@ -29,6 +37,31 @@
         .header-headline {
             .header-title {
                 font-size: 30px;
+            }
+        }
+    }
+    main {
+        .main__screen-one {
+            .main__screen__one-card__container {
+                display: flex;
+                width: 75%;
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+                padding: 10px;
+                .screen__one-card {
+                    min-width: 100%;
+                    align-items: center;
+                    .travel-type {
+                        p {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .main__screen-three {
+            .main__screen__three-vacation__container {
+                grid-template-columns: repeat(1, 1fr);
             }
         }
     }
