@@ -1,6 +1,7 @@
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
     header {
         padding: 26px 10px;
+
         .header-top {
             .header-services__list {
                 display: none;
@@ -12,45 +13,66 @@
                 display: block;
             }
         }
+
         .header-headline {
             padding: 5px;
+
             .header-title {
                 font-size: 50px;
                 min-width: 70%;
             }
         }
     }
+
     main {
         .main__screen-two {
             .main__screen__two-about__box {
-                width: 80%;
+                width: 90%;
             }
         }
     }
 }
-@media only screen and (max-width: 880px){
+
+@media only screen and (max-width: 880px) {
     header {
         height: 60vh;
+
         .container {
             width: 96%;
         }
+
         .header-headline {
             .header-title {
                 font-size: 30px;
             }
         }
     }
+
     main {
+        .container {
+            width: 96%;
+        }
+
         .main__screen-one {
+            .main__screen__one-heading {
+                a {
+                    display: none;
+                }
+            }
+
             .main__screen__one-card__container {
                 display: flex;
-                width: 75%;
+                width: 100%;
                 flex-wrap: nowrap;
                 overflow-x: scroll;
                 padding: 10px;
+
                 .screen__one-card {
+                    padding: 10px 15px;
+                    height: 480px;
                     min-width: 100%;
                     align-items: center;
+
                     .travel-type {
                         p {
                             width: 50%;
@@ -59,9 +81,33 @@
                 }
             }
         }
+
+        .main__screen-two {
+            height: 800px;
+            padding: 5px;
+            gap: 5px;
+
+            .main__screen__two-about__box {
+                padding: 20px 10px;
+                width: 95%;
+
+                h2 {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
         .main__screen-three {
             .main__screen__three-vacation__container {
                 grid-template-columns: repeat(1, 1fr);
+            }
+
+            .main__screen__three-conclusion {
+                width: 100%;
+
+                p {
+                    width: 100%;
+                }
             }
         }
     }

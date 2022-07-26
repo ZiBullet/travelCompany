@@ -19,6 +19,7 @@ $gradient-blue: 92.71deg, #0499DD 0%, #17C1BC 100%;
     margin: $mar-center;
     width: $cont-width;
 }
+
 .elem-director {
     border: none;
     line-height: 16px;
@@ -26,7 +27,9 @@ $gradient-blue: 92.71deg, #0499DD 0%, #17C1BC 100%;
     font-weight: 700;
     background: linear-gradient($gradient-blue);
 }
-button, a {
+
+button,
+a {
     color: #fff;
     text-decoration: none;
     border: none;

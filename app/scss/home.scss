@@ -43,9 +43,11 @@ header {
                 }
             }
         }
+
         .header-logo img {
             cursor: pointer;
         }
+
         .icon-menu {
             cursor: pointer;
             display: none;
@@ -76,6 +78,7 @@ header {
 }
 
 main {
+
     margin: 50px 0;
     padding: 40px 0;
     width: 100%;
@@ -103,11 +106,19 @@ main {
         }
 
         .main__screen__one-card__container {
+            .main__screen__one-heading {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             width: 90%;
             gap: 20px;
+
             .screen__one-card {
                 border-radius: $rad-brd-light;
                 height: 600px;
@@ -155,24 +166,28 @@ main {
                         }
                     }
                 }
+
                 a {
                     button {
                         padding: $pad-light;
                         border-radius: $rad-brd-semiheavy;
                     }
                 }
+
                 .travel-type-description {
                     width: 100%;
+
                     p {
                         font-size: 12px;
                         width: 84%;
                         color: #fff;
-                        
+
                     }
                 }
             }
         }
     }
+
     .main__screen-two {
         padding: 10px;
         margin-top: 110px;
@@ -186,6 +201,7 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         .main__screen__two-about__box {
             padding: 60px 85px;
             background-color: white;
@@ -198,16 +214,19 @@ main {
             align-items: flex-start;
             text-align: start;
             gap: 20px;
+
             h2 {
                 margin-bottom: 20px;
                 color: $clr-blue-soft;
             }
+
             p {
                 font-size: 14px;
                 font-weight: 500;
             }
         }
     }
+
     .main__screen-three {
         margin-top: 100px;
         display: flex;
@@ -215,35 +234,42 @@ main {
         align-items: center;
         text-align: center;
         gap: 60px;
+
         .main__screen__three-headtitle {
             color: $clr-blue-soft;
             text-align: right;
             align-self: flex-start;
             margin-bottom: 30px;
         }
+
         .main__screen__three-vacation__container {
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             width: 100%;
             gap: 20px;
+
             .vacation-card {
                 display: flex;
                 text-align: left;
                 gap: 20px;
+
                 .vacation-icon {
                     width: 75px;
                     height: 75px;
                     object-fit: cover;
                 }
+
                 .vacation-description {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+
                     h2 {
                         color: $clr-blue-soft;
                         font-size: 18px;
                     }
+
                     p {
                         font-size: 14px;
                         width: 88%;
@@ -251,22 +277,24 @@ main {
                 }
             }
         }
+
         .main__screen__three-conclusion {
             width: 100%;
             align-items: center;
             display: flex;
             flex-direction: column;
             gap: 20px;
+
             p {
                 font-size: 14px;
                 font-weight: 500;
                 width: 40%;
             }
+
             .elem-director {
                 padding: $pad-heavy;
                 border-radius: $rad-brd-semiheavy;
             }
         }
     }
-   
 }
